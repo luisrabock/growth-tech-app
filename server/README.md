@@ -5,9 +5,9 @@ In the project directory, you can run:
 ### `npm run dev`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
+Api runs in [http://localhost:4000](http://localhost:4000)
 
-The page will reload if you make edits.<br />
+nodemon will reload the api if you make edits.<br />
 
 ### `npm run production`
 
