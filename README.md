@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to GrowthTechApp 👋</h1>
+<h1 align="center">Welcome to growth-tech-app 👋</h1>
 <p>
 </p>
 
