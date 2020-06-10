@@ -3,7 +3,7 @@ import Main from "./Components/Main";
 
 const App = () => {
   return (
-    <div>
+    <div data-test="component-app">
       <Main />
     </div>
   );

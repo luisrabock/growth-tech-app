@@ -8,7 +8,7 @@ const Cards = ({ dataPosts }) => {
   const makeRows = () =>
     arr.map((doc) => {
       return (
-        <Card index={doc.id}>
+        <Card key={doc.id}>
           <Card.Content>
             <Card.Header content={doc.name} />
             <Card.Meta content={doc.title} />
@@ -18,14 +18,18 @@ const Cards = ({ dataPosts }) => {
       );
     });
   return (
-    <div data-test="component-posts">
-      {!dataPosts ? <Spinner /> : <Card.Group>{makeRows()}</Card.Group>}
-    </div>
+    <React.Fragment>
+      {!dataPosts ? (
+        <Spinner data-test="component-spinner" />
+      ) : (
+        <Card.Group data-test="component-posts">{makeRows()}</Card.Group>
+      )}
+    </React.Fragment>
   );
 };
 
 Cards.propTypes = {
-  dataPosts: PropTypes.array.isRequired,
+  dataPosts: PropTypes.array,
 };
 
 export default Cards;

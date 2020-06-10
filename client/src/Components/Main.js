@@ -1,28 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Icon, Header } from "semantic-ui-react";
 import { Helmet } from "react-helmet";
-import axios from "axios";
 import "../styles.css";
 import Posts from "./Posts";
 import { labelsMenu } from "../Utils/constants";
 import MenuApp from "./MenuApp";
+import { fetchData } from "../Services/Services";
 
 const Main = () => {
   const [posts, setPosts] = useState();
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const getResponse = await axios.get("http://localhost:4000/merge");
-        setPosts(getResponse.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
+    fetchData(setPosts);
   }, []);
   return (
-    <React.Fragment>
+    <div data-test="component-main">
       <Helmet>
         <title>Menu</title>
       </Helmet>
@@ -38,7 +30,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

@@ -2,8 +2,8 @@ import React from "react";
 
 const Spinner = () => {
   return (
-    <div class="ui active inverted dimmer" data-test="component-spinner">
-      <div class="ui text loader">Loading</div>
+    <div className="ui active inverted dimmer" data-test="component-spinner">
+      <div className="ui text loader">Loading</div>
     </div>
   );
 };

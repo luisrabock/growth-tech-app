@@ -1,8 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import { findByTestAttr } from "../TestUtils/Utils";
-import Spinner from "./Spinner";
+import { findByTestAttr } from "../../TestUtils/Utils";
+import Spinner from "../../Components/Spinner";
 
 const setup = (dataPosts = [{ name: "Leanne Graham" }]) => {
   return shallow(<Spinner dataPosts={dataPosts} />);
