@@ -23,6 +23,7 @@ Growth-tech-app it is an application that displays user posts.
 ## 🚀&nbsp; Installation and Documentation
 
 You need to install  [Node.js](https://nodejs.org/en/download/)  and  [Npm]([https://www.npmjs.com/](https://www.npmjs.com/))  first.
+
 Clone repo: [https://github.com/luisrabock/growth-tech-app](https://github.com/luisrabock/growth-tech-app)
 
 🧪 **Development environment**:
