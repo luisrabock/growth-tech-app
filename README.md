@@ -28,27 +28,44 @@ Clone repo: [https://github.com/luisrabock/growth-tech-app](https://github.com/l
 🧪 **Development environment**:
 
 Enter the server folder (backend) then install the dependencies:
+
 ```npm install```
+
 Start backend server:
+
 ```npm run dev```
+
 Enter the client folder (frontend),  then install the dependencies:
+
 ```npm install```
+
 Start frontend server:
+
 ```npm start```
 
 🏭 **Production environment**:
-Enter the server folder (backend) then install the dependencies:
-```npm install```
-You need install PM2 globally:
-```npm install pm2@latest -g```
-Start production backend:
-```npm run production```
-Enter the client folder (frontend),  then install the dependencies:
-```npm install```
-Run production buid:
-```npm run build```
-Builds the app for production to the `build` folder.
 
+Enter the server folder (backend) then install the dependencies:
+
+```npm install```
+
+You need install PM2 globally:
+
+```npm install pm2@latest -g```
+
+Start production backend:
+
+```npm run production```
+
+Enter the client folder (frontend),  then install the dependencies:
+
+```npm install```
+
+Run production buid:
+
+```npm run build```
+
+Builds the app for production to the `build` folder.
 
 The application is running!!
 
